@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useCallback, useMemo } from 'react';
-import { fetchNotifications } from '../services/notificationService';
+import { fetchNotifications } from '../api/notifications';
 import { sortNotifications } from '../utils/sortNotifications';
 import { getPriority } from '../utils/priority';
 import { logAction, logger } from '../middleware/logger';

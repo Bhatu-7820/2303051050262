@@ -23,7 +23,7 @@ import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 
 import { useNotifications } from '../hooks/useNotifications';
 import PriorityNotifications from '../components/PriorityNotifications';
-import FilterBar from '../components/FilterBar';
+import NotificationFilter from '../components/NotificationFilter';
 import NotificationList from '../components/NotificationList';
 import PaginationBar from '../components/PaginationBar';
 import Loader from '../components/Loader';
@@ -34,7 +34,7 @@ import ErrorAlert from '../components/ErrorAlert';
  * Features stats panels, critical alerts, general stream list, 
  * filters, pagination, and a live developer logs terminal.
  */
-export const Home = () => {
+export const NotificationsPage = () => {
   const theme = useTheme();
   const [logsOpen, setLogsOpen] = useState(false);
   const { 
@@ -144,7 +144,7 @@ export const Home = () => {
 
         {/* Right Side: General notification stream with filter & pagination */}
         <Grid item xs={12} md={7.5}>
-          <FilterBar />
+          <NotificationFilter />
 
           {/* Error and Loading handlers */}
           {error && (
@@ -263,4 +263,4 @@ export const Home = () => {
   );
 };
 
-export default Home;
+export default NotificationsPage;

@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider, createTheme, CssBaseline, Box } from '@mui/material';
 import { NotificationProvider } from './context/NotificationContext';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import NotificationsPage from './pages/NotificationsPage';
 
 // Custom Material UI Theme with modern styles and clean typography
 const theme = createTheme({
@@ -83,7 +83,7 @@ function App() {
           }}
         >
           <Navbar />
-          <Home />
+          <NotificationsPage />
         </Box>
       </NotificationProvider>
     </ThemeProvider>

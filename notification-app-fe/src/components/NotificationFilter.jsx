@@ -16,7 +16,7 @@ import { useNotifications } from '../hooks/useNotifications';
  * FilterBar component displaying Select input to filter by Notification Type.
  * Options: All, Placement, Result, Event.
  */
-export const FilterBar = () => {
+export const NotificationFilter = () => {
   const { filter, handleFilterChange, stats } = useNotifications();
 
   return (
@@ -99,4 +99,4 @@ export const FilterBar = () => {
   );
 };
 
-export default FilterBar;
+export default NotificationFilter;
