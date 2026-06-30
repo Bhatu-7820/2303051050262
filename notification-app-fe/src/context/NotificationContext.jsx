@@ -18,7 +18,7 @@ export const NotificationProvider = ({ children }) => {
   
   // Custom states for system logs and API modes to enhance developer visibility
   const [logs, setLogs] = useState([]);
-  const [useFallback, setUseFallback] = useState(false); // Can toggle mock data in UI if API is blocked
+  const [useFallback, setUseFallback] = useState(!import.meta.env.VITE_API_TOKEN); // Default to mock data if VITE_API_TOKEN is missing
 
   const limit = 10;
 
